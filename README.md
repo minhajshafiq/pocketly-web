@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pocketly Web - Landing Page
 
-## Getting Started
+Une landing page moderne et responsive pour l'application mobile Pocketly, construite avec Next.js 15 et les dernières technologies de 2025.
 
-First, run the development server:
+## 🚀 Technologies Utilisées
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15** - Framework React avec App Router
+- **TypeScript** - Typage statique
+- **Tailwind CSS 4** - Framework CSS moderne
+- **Framer Motion** - Animations fluides
+- **Lucide React** - Icônes modernes
+- **Radix UI** - Composants accessibles
+- **Class Variance Authority** - Gestion des variantes de composants
+
+## 🏗️ Architecture
+
+```
+src/
+├── app/                    # App Router Next.js
+│   ├── globals.css        # Styles globaux
+│   ├── layout.tsx         # Layout principal
+│   └── page.tsx           # Page d'accueil
+├── components/            # Composants réutilisables
+│   ├── ui/               # Composants UI de base
+│   ├── layout/           # Composants de layout
+│   └── sections/         # Sections de la landing page
+├── constants/            # Constantes et configuration
+├── lib/                  # Utilitaires
+└── types/                # Types TypeScript
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Couleurs** : Système de couleurs cohérent avec support dark/light mode
+- **Typographie** : Police Geist pour une lisibilité optimale
+- **Composants** : Bibliothèque de composants réutilisables
+- **Animations** : Transitions fluides avec Framer Motion
+- **Responsive** : Design mobile-first
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Démarrage Rapide
 
-## Learn More
+1. **Installation des dépendances**
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Démarrage du serveur de développement**
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Ouverture dans le navigateur**
+   ```
+   http://localhost:3000
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Fonctionnalités
 
-## Deploy on Vercel
+- ✅ **Header responsive** avec navigation mobile
+- ✅ **Section Hero** avec CTA et mockup mobile
+- ✅ **Section Fonctionnalités** avec grille de cartes
+- ✅ **Témoignages** avec système de notation
+- ✅ **Tarifs** avec plans comparatifs
+- ✅ **Call-to-Action** final
+- ✅ **Footer** complet avec liens
+- ✅ **SEO optimisé** avec métadonnées
+- ✅ **Performance** optimisée
+- ✅ **Accessibilité** respectée
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Sections de la Landing Page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Hero** - Présentation principale avec CTA
+2. **Fonctionnalités** - 6 fonctionnalités clés
+3. **Témoignages** - Avis clients avec statistiques
+4. **Tarifs** - 3 plans avec FAQ
+5. **CTA Final** - Conversion finale
+
+## 🛠️ Scripts Disponibles
+
+- `npm run dev` - Démarrage en développement
+- `npm run build` - Build de production
+- `npm run start` - Démarrage en production
+- `npm run lint` - Vérification du code
+
+## 📦 Dépendances Principales
+
+- `next@15.5.3` - Framework React
+- `react@19.1.0` - Bibliothèque UI
+- `framer-motion@^11.0.0` - Animations
+- `lucide-react@^0.400.0` - Icônes
+- `tailwindcss@^4` - Framework CSS
+- `@radix-ui/*` - Composants accessibles
+
+## 🌟 Fonctionnalités Avancées
+
+- **Animations fluides** avec Framer Motion
+- **Design system** cohérent
+- **Composants réutilisables** modulaires
+- **TypeScript** pour la robustesse
+- **SEO optimisé** pour le référencement
+- **Performance** optimisée
+- **Accessibilité** respectée
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
