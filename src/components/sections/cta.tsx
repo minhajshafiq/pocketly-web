@@ -38,7 +38,7 @@ export function CTA() {
               className="text-lg sm:text-xl px-10 sm:px-12 py-4 sm:py-5 bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto font-bold cursor-pointer rounded-full"
             >
               <Rocket className="h-5 w-5 sm:h-6 sm:w-6 mr-3" />
-              🚀 Rejoindre la waitlist
+              Rejoindre la waitlist
             </Button>
             
             <Button

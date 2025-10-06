@@ -173,37 +173,69 @@ export function Pricing() {
                       </h4>
                       <motion.div
                         animate={{ rotate: openFAQ === faq.id ? 180 : 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        transition={{ 
+                          duration: 0.3, 
+                          ease: [0.25, 0.46, 0.45, 0.94],
+                          type: "tween"
+                        }}
                         className="flex-shrink-0"
+                        style={{ willChange: "transform" }}
                       >
                         <ChevronDown className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors duration-200" />
                       </motion.div>
                     </button>
                     
-                    <AnimatePresence>
+                    <AnimatePresence mode="wait">
                       {openFAQ === faq.id && (
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ 
-                            duration: 0.4, 
-                            ease: "easeInOut",
-                            opacity: { duration: 0.2 }
+                            duration: 0.35, 
+                            ease: [0.25, 0.46, 0.45, 0.94],
+                            opacity: { duration: 0.25 },
+                            type: "tween"
                           }}
                           className="overflow-hidden"
+                          style={{ willChange: "transform, opacity, height" }}
                         >
                           <motion.div
-                            initial={{ y: -10 }}
-                            animate={{ y: 0 }}
-                            exit={{ y: -10 }}
-                            transition={{ duration: 0.3, delay: 0.1 }}
+                            initial={{ y: -5, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            exit={{ y: -5, opacity: 0 }}
+                            transition={{ 
+                              duration: 0.3, 
+                              delay: 0.1,
+                              ease: [0.25, 0.46, 0.45, 0.94],
+                              type: "tween"
+                            }}
                             className="px-6 pb-6 pt-0"
                           >
-                            <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-4" />
-                            <p className="text-sm text-muted-foreground leading-relaxed">
+                            <motion.div 
+                              initial={{ scaleX: 0, opacity: 0 }}
+                              animate={{ scaleX: 1, opacity: 1 }}
+                              transition={{ 
+                                duration: 0.3, 
+                                delay: 0.15,
+                                ease: [0.25, 0.46, 0.45, 0.94],
+                                type: "tween"
+                              }}
+                              className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-4" 
+                            />
+                            <motion.p 
+                              initial={{ opacity: 0, y: 5 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ 
+                                duration: 0.3, 
+                                delay: 0.2,
+                                ease: [0.25, 0.46, 0.45, 0.94],
+                                type: "tween"
+                              }}
+                              className="text-sm text-muted-foreground leading-relaxed"
+                            >
                               {faq.answer}
-                            </p>
+                            </motion.p>
                           </motion.div>
                         </motion.div>
                       )}

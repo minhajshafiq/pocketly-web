@@ -22,10 +22,24 @@ export function Hero() {
             className="space-y-8 sm:space-y-10 text-center lg:text-left order-2 lg:order-1 w-full"
           >
             <div className="space-y-4 sm:space-y-6">
-              <Badge variant="secondary" className="w-fit mx-auto lg:mx-0 bg-primary/10 text-primary border-primary/20 px-4 py-2 text-sm font-medium">
-                <Star className="h-3 w-3 mr-2 fill-primary text-primary" />
-                Votre argent. Votre liberté. Votre avenir.
-              </Badge>
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="w-fit mx-auto lg:mx-0"
+              >
+                <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-6 py-3">
+                  <motion.div
+                    animate={{ rotate: [0, 10, -10, 0] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  >
+                    <Star className="h-4 w-4 fill-primary text-primary" />
+                  </motion.div>
+                  <span className="text-sm font-semibold text-primary bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+                    Votre argent. Votre liberté. Votre avenir.
+                  </span>
+                </div>
+              </motion.div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
                 Prenez le contrôle de vos finances…{" "}
@@ -43,11 +57,11 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
               <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 w-full sm:w-auto bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer rounded-full">
                 <Rocket className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-                🚀 Rejoindre la waitlist
+                Rejoindre la waitlist
               </Button>
               <Button variant="outline" size="lg" className="text-base sm:text-lg px-8 sm:px-10 w-full sm:w-auto border-2 hover:bg-muted/50 transition-all duration-300 cursor-pointer rounded-full">
                 <Play className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-                ▶ Voir la démo
+                Voir la démo
               </Button>
             </div>
 
