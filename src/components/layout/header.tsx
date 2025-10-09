@@ -43,14 +43,14 @@ export function Header() {
         {/* Desktop CTA - Right */}
         <div className="hidden md:flex items-center">
           <Button size="sm" className="font-medium cursor-pointer rounded-full hover:scale-105 transition-transform duration-300">
-            Télécharger
+            Rejoindre la waitlist
           </Button>
         </div>
 
         {/* Mobile CTA - Visible on mobile */}
         <div className="flex md:hidden items-center space-x-2">
           <Button size="sm" className="px-3 text-xs cursor-pointer rounded-full">
-            Télécharger
+            Rejoindre la waitlist
           </Button>
         </div>
 

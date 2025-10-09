@@ -27,3 +27,12 @@ export interface SocialLink {
   href: string
   icon: string
 }
+
+export interface RoadmapItem {
+  id: string
+  title: string
+  description: string
+  status: "completed" | "current" | "upcoming"
+  date?: string
+  icon: string
+}

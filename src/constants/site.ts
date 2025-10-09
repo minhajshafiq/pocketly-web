@@ -1,4 +1,4 @@
-import { NavItem, SocialLink, Feature, PricingPlan } from "@/types"
+import { NavItem, SocialLink, Feature, PricingPlan, RoadmapItem } from "@/types"
 
 export const siteConfig = {
   name: "Pocketly",
@@ -23,6 +23,10 @@ export const navItems: NavItem[] = [
   {
     title: "Tarifs",
     href: "#pricing",
+  },
+  {
+    title: "Roadmap",
+    href: "#roadmap",
   },
 ]
 
@@ -53,15 +57,15 @@ export const features: Feature[] = [
   },
   {
     id: "2",
-    title: "Synchronisation cloud",
-    description: "Vos données sont sauvegardées et synchronisées en temps réel.",
-    icon: "cloud",
+    title: "Connexion bancaire sécurisée",
+    description: "Connectez vos comptes bancaires en toute sécurité pour un suivi automatique de vos finances.",
+    icon: "shield",
   },
   {
     id: "3",
-    title: "Sécurité avancée",
-    description: "Protection de vos données avec un chiffrement de niveau bancaire.",
-    icon: "shield",
+    title: "Synchronisation cloud",
+    description: "Vos données sont sauvegardées et synchronisées en temps réel.",
+    icon: "cloud",
   },
   {
     id: "4",
@@ -93,7 +97,6 @@ export const pricingPlans: PricingPlan[] = [
     features: [
       "Gestion de base des finances",
       "Suivi des dépenses",
-      "1 compte bancaire",
       "Support par email",
       "Synchronisation limitée",
     ],
@@ -106,12 +109,9 @@ export const pricingPlans: PricingPlan[] = [
     period: "par mois",
     features: [
       "Toutes les fonctionnalités gratuites",
-      "Comptes bancaires illimités",
-      "Budgets avancés",
       "Analytics détaillés",
-      "Support prioritaire",
-      "Synchronisation en temps réel",
-      "Export des données",
+      "Règle 50-30-20 pour les pockets",
+      "Calendrier des dépenses mensuelles",
     ],
     isPopular: true,
     cta: "Essayer Premium",
@@ -123,13 +123,39 @@ export const pricingPlans: PricingPlan[] = [
     period: "paiement unique",
     features: [
       "Toutes les fonctionnalités Premium",
-      "Mises à jour à vie",
-      "Support prioritaire à vie",
-      "Fonctionnalités exclusives",
-      "Pas de frais récurrents",
-      "Garantie satisfait ou remboursé",
       "Accès anticipé aux nouvelles fonctionnalités",
     ],
     cta: "Acheter à vie",
+  },
+]
+
+export const roadmapItems: RoadmapItem[] = [
+  {
+    id: "1",
+    title: "App en bêta",
+    description: "Version bêta de l'application mobile avec les fonctionnalités de base",
+    status: "completed",
+    icon: "smartphone",
+  },
+  {
+    id: "2",
+    title: "App publiée",
+    description: "Publication officielle sur les stores avec toutes les fonctionnalités premium",
+    status: "current",
+    icon: "rocket",
+  },
+  {
+    id: "3",
+    title: "Version web",
+    description: "Interface web complète pour une gestion depuis n'importe quel navigateur",
+    status: "upcoming",
+    icon: "monitor",
+  },
+  {
+    id: "4",
+    title: "Budget à 2",
+    description: "Gestion collaborative des budgets pour couples et familles",
+    status: "upcoming",
+    icon: "users",
   },
 ]
