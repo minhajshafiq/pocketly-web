@@ -1,6 +1,6 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Twitter, Github, Linkedin } from "lucide-react"
+import { LogoText } from "@/components/ui/logo"
 import { socialLinks } from "@/constants/site"
 
 export function Footer() {
@@ -10,15 +10,8 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
           {/* Brand */}
           <div className="space-y-3 sm:space-y-4 sm:col-span-2 lg:col-span-1">
-                <Link href="/" className="flex items-center space-x-3">
-                  <Image 
-                    src="/play_store_512.png" 
-                    alt="Pocketly App Icon"
-                    width={28}
-                    height={28}
-                    className="h-6 w-6 sm:h-7 sm:w-7 rounded-lg"
-                  />
-                  <span className="text-xl sm:text-2xl font-bold tracking-tight">Pocketly</span>
+                <Link href="/" className="flex items-center">
+                  <LogoText className="hover:scale-105 transition-transform duration-300" />
                 </Link>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-sm">
               L&apos;application mobile qui révolutionne votre quotidien.

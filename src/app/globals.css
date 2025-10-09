@@ -2,48 +2,90 @@
 
 @layer base {
   :root {
+    /* Pocketly Brand Colors */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
+    
+    /* Primary: Pocketly Blue - Trust & Finance */
+    --primary: 214 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Pocketly Green - Money & Growth */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent: Pocketly Purple - Innovation */
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Muted: Professional Gray */
     --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    
+    /* Success: Pocketly Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning: Pocketly Orange */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Destructive: Pocketly Red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders & Inputs */
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
-    --radius: 0.5rem;
+    --ring: 214 100% 50%;
+    --radius: 0.75rem;
   }
 
   .dark {
+    /* Dark Mode - Pocketly Brand */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
+    
+    /* Primary: Brighter Blue for Dark Mode */
+    --primary: 214 100% 60%;
     --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    
+    /* Secondary: Brighter Green for Dark Mode */
+    --secondary: 142 76% 46%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    
+    /* Accent: Brighter Purple for Dark Mode */
+    --accent: 262 83% 68%;
+    --accent-foreground: 222.2 84% 4.9%;
+    
+    /* Muted: Dark Gray */
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    
+    /* Success: Brighter Green */
+    --success: 142 76% 46%;
+    --success-foreground: 222.2 84% 4.9%;
+    
+    /* Warning: Brighter Orange */
+    --warning: 38 92% 60%;
+    --warning-foreground: 222.2 84% 4.9%;
+    
+    /* Destructive: Brighter Red */
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 222.2 84% 4.9%;
+    
+    /* Borders & Inputs */
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 94.1%;
+    --ring: 214 100% 60%;
   }
 }
 
@@ -86,10 +128,60 @@
   max-width: 1280px;
 }
 
-/* Custom styles */
+/* Pocketly Brand Styles */
 .bg-grid-pattern {
   background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.1) 1px, transparent 1px);
   background-size: 20px 20px;
+}
+
+/* Pocketly Gradient Backgrounds */
+.bg-pocketly-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+}
+
+.bg-pocketly-gradient-soft {
+  background: linear-gradient(135deg, hsl(var(--primary) / 0.1) 0%, hsl(var(--accent) / 0.1) 100%);
+}
+
+.bg-pocketly-success {
+  background: linear-gradient(135deg, hsl(var(--success)) 0%, hsl(var(--secondary)) 100%);
+}
+
+/* Pocketly Shadows */
+.shadow-pocketly {
+  box-shadow: 0 10px 25px -5px hsl(var(--primary) / 0.1), 0 10px 10px -5px hsl(var(--primary) / 0.04);
+}
+
+.shadow-pocketly-lg {
+  box-shadow: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+}
+
+/* Pocketly Animations */
+@keyframes pocketly-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pocketly-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes pocketly-glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+  50% { box-shadow: 0 0 30px hsl(var(--primary) / 0.5); }
+}
+
+.animate-pocketly-float {
+  animation: pocketly-float 3s ease-in-out infinite;
+}
+
+.animate-pocketly-pulse {
+  animation: pocketly-pulse 2s ease-in-out infinite;
+}
+
+.animate-pocketly-glow {
+  animation: pocketly-glow 2s ease-in-out infinite;
 }
 
 /* Smooth scrolling */

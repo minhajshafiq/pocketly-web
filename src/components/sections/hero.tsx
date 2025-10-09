@@ -54,11 +54,11 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
-              <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 w-full sm:w-auto bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer rounded-full">
+              <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 w-full sm:w-auto bg-pocketly-gradient hover:shadow-pocketly text-white transition-all duration-300 cursor-pointer rounded-full hover:scale-105">
                 <Rocket className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                 Rejoindre la waitlist
               </Button>
-              <Button variant="outline" size="lg" className="text-base sm:text-lg px-8 sm:px-10 w-full sm:w-auto border-2 hover:bg-muted/50 transition-all duration-300 cursor-pointer rounded-full">
+              <Button variant="outline" size="lg" className="text-base sm:text-lg px-8 sm:px-10 w-full sm:w-auto border-2 border-primary/20 hover:bg-primary/5 hover:border-primary/40 transition-all duration-300 cursor-pointer rounded-full hover:scale-105">
                 <Play className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                 Voir la démo
               </Button>
@@ -70,7 +70,7 @@ export function Hero() {
                         {[1, 2, 3, 4].map((i) => (
                           <div
                             key={i}
-                            className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-gradient-to-r from-primary to-primary/60 border-2 border-background"
+                            className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-pocketly-gradient border-2 border-background shadow-pocketly"
                           />
                         ))}
                       </div>
@@ -90,13 +90,19 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative order-1 lg:order-2 w-full max-w-2xl mx-auto lg:mx-auto flex justify-center lg:justify-end"
           >
-            <Image 
-              src="/mockup.png" 
-              alt="Pocketly App - Gestion financière intelligente"
-              width={800}
-              height={600}
-              className="w-full h-auto max-w-2xl mx-auto drop-shadow-2xl"
-            />
+            <div className="relative">
+              <Image 
+                src="/mockup.png" 
+                alt="Pocketly App - Gestion financière intelligente"
+                width={800}
+                height={600}
+                className="w-full h-auto max-w-2xl mx-auto drop-shadow-2xl animate-pocketly-float"
+              />
+              {/* Floating elements around the mockup */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-pocketly-gradient rounded-full animate-pocketly-pulse opacity-80"></div>
+              <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-secondary rounded-full animate-pocketly-pulse opacity-60" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute top-1/2 -left-8 w-4 h-4 bg-accent rounded-full animate-pocketly-pulse opacity-70" style={{ animationDelay: '2s' }}></div>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -89,10 +89,10 @@ export function Pricing() {
                 </div>
               )}
 
-              <Card className={`h-full flex flex-col transition-all duration-300 group-hover:shadow-2xl ${
+              <Card className={`h-full flex flex-col transition-all duration-300 group-hover:shadow-pocketly rounded-2xl ${
                 plan.isPopular
-                  ? 'border-2 border-primary shadow-xl lg:scale-105 bg-gradient-to-br from-primary/5 to-transparent'
-                  : 'border border-border/50 hover:border-primary/30 hover:shadow-xl'
+                  ? 'border-2 border-primary shadow-xl lg:scale-105 bg-pocketly-gradient-soft'
+                  : 'border border-border/50 hover:border-primary/30 hover:shadow-pocketly'
               }`}>
                 <CardHeader className="text-center pb-6 p-6 sm:p-8">
                   <CardTitle className="text-2xl sm:text-3xl font-bold mb-4">{plan.name}</CardTitle>
@@ -120,7 +120,7 @@ export function Pricing() {
                     <Button
                       className={`w-full text-base font-semibold py-3 cursor-pointer rounded-full transition-all duration-300 ${
                         plan.isPopular
-                          ? 'bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl'
+                          ? 'bg-pocketly-gradient hover:shadow-pocketly text-white'
                           : 'bg-muted hover:bg-primary hover:text-white border border-border hover:border-primary'
                       }`}
                       variant={plan.isPopular ? 'default' : 'outline'}

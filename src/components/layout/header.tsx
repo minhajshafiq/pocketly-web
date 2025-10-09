@@ -2,10 +2,10 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { LogoText } from "@/components/ui/logo"
 import { navItems } from "@/constants/site"
 
 export function Header() {
@@ -15,15 +15,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
       <div className="container flex h-16 sm:h-18 items-center px-4 sm:px-6">
         {/* Logo - Left */}
-        <Link href="/" className="flex items-center space-x-3">
-          <Image 
-            src="/play_store_512.png" 
-            alt="Pocketly App Icon"
-            width={28}
-            height={28}
-            className="h-6 w-6 sm:h-7 sm:w-7 rounded-lg"
-          />
-          <span className="text-xl sm:text-2xl font-bold tracking-tight">Pocketly</span>
+        <Link href="/" className="flex items-center">
+          <LogoText className="hover:scale-105 transition-transform duration-300" />
         </Link>
 
         {/* Desktop Navigation - Center */}
@@ -42,14 +35,14 @@ export function Header() {
 
         {/* Desktop CTA - Right */}
         <div className="hidden md:flex items-center">
-          <Button size="sm" className="font-medium cursor-pointer rounded-full hover:scale-105 transition-transform duration-300">
+          <Button size="sm" className="font-medium cursor-pointer rounded-full bg-pocketly-gradient hover:shadow-pocketly transition-all duration-300 hover:scale-105">
             Rejoindre la waitlist
           </Button>
         </div>
 
         {/* Mobile CTA - Visible on mobile */}
         <div className="flex md:hidden items-center space-x-2">
-          <Button size="sm" className="px-3 text-xs cursor-pointer rounded-full">
+          <Button size="sm" className="px-3 text-xs cursor-pointer rounded-full bg-pocketly-gradient hover:shadow-pocketly transition-all duration-300">
             Rejoindre la waitlist
           </Button>
         </div>
