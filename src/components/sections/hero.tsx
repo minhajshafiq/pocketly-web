@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { Rocket, Play, Star, TrendingUp } from "lucide-react"
 
 export function Hero() {

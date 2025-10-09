@@ -22,7 +22,7 @@ export default function Privacy() {
                 <section>
                   <h2 className="text-2xl font-semibold mb-4">1. INTRODUCTION</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Pocketly ("nous", "notre", "nos") s'engage à protéger votre vie privée et vos données personnelles. 
+                    Pocketly (&quot;nous&quot;, &quot;notre&quot;, &quot;nos&quot;) s&apos;engage à protéger votre vie privée et vos données personnelles. 
                     Cette politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons 
                     vos informations lorsque vous utilisez notre application mobile de gestion de budget et finances personnelles.
                   </p>
@@ -36,10 +36,10 @@ export default function Privacy() {
                   
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-xl font-medium mb-3">2.1 Informations d'identification personnelle</h3>
+                      <h3 className="text-xl font-medium mb-3">2.1 Informations d&apos;identification personnelle</h3>
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                         <li><strong>Nom et prénom</strong> : Pour personnaliser votre expérience</li>
-                        <li><strong>Adresse e-mail</strong> : Pour l'authentification et la communication</li>
+                        <li><strong>Adresse e-mail</strong> : Pour l&apos;authentification et la communication</li>
                         <li><strong>Numéro de téléphone</strong> (optionnel) : Pour la vérification en deux étapes</li>
                         <li><strong>Mot de passe</strong> : Chiffré et stocké de manière sécurisée</li>
                       </ul>
@@ -50,15 +50,15 @@ export default function Privacy() {
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                         <li><strong>Transactions</strong> : Montants, dates, descriptions, catégories</li>
                         <li><strong>Budgets</strong> : Limites et objectifs financiers</li>
-                        <li><strong>Poches d'épargne</strong> : Objectifs d'épargne et montants</li>
+                        <li><strong>Poches d&apos;épargne</strong> : Objectifs d&apos;épargne et montants</li>
                         <li><strong>Statistiques financières</strong> : Analyses et tendances de vos finances</li>
                       </ul>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-medium mb-3">2.3 Données d'utilisation</h3>
+                      <h3 className="text-xl font-medium mb-3">2.3 Données d&apos;utilisation</h3>
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                        <li><strong>Préférences utilisateur</strong> : Paramètres de l'application</li>
+                        <li><strong>Préférences utilisateur</strong> : Paramètres de l&apos;application</li>
                         <li><strong>Données de navigation</strong> : Pages visitées, fonctionnalités utilisées</li>
                         <li><strong>Données de performance</strong> : Temps de réponse, erreurs techniques</li>
                         <li><strong>Préférences de notification</strong> : Paramètres de rappels et alertes</li>
@@ -68,8 +68,8 @@ export default function Privacy() {
                     <div>
                       <h3 className="text-xl font-medium mb-3">2.4 Données techniques</h3>
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                        <li><strong>Informations d'appareil</strong> : Modèle, système d'exploitation, version</li>
-                        <li><strong>Adresse IP</strong> : Pour la sécurité et l'analyse</li>
+                        <li><strong>Informations d&apos;appareil</strong> : Modèle, système d&apos;exploitation, version</li>
+                        <li><strong>Adresse IP</strong> : Pour la sécurité et l&apos;analyse</li>
                         <li><strong>Identifiants uniques</strong> : Pour la synchronisation des données</li>
                         <li><strong>Données de localisation</strong> (optionnel) : Pour les fonctionnalités géolocalisées</li>
                       </ul>
@@ -78,7 +78,7 @@ export default function Privacy() {
                     <div>
                       <h3 className="text-xl font-medium mb-3">2.5 Données de paiement</h3>
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                        <li><strong>Informations d'abonnement</strong> : Statut premium, dates d'expiration</li>
+                        <li><strong>Informations d&apos;abonnement</strong> : Statut premium, dates d&apos;expiration</li>
                         <li><strong>Données de transaction IAP</strong> : Identifiants de produits, reçus</li>
                         <li><strong>Informations de facturation</strong> : Historique des paiements</li>
                       </ul>
@@ -96,14 +96,14 @@ export default function Privacy() {
                         <li>Authentification et gestion de votre compte</li>
                         <li>Synchronisation de vos données financières</li>
                         <li>Génération de rapports et statistiques</li>
-                        <li>Fonctionnalités de budget et d'épargne</li>
+                        <li>Fonctionnalités de budget et d&apos;épargne</li>
                       </ul>
                     </div>
 
                     <div>
                       <h3 className="text-xl font-medium mb-3">3.2 Amélioration du service</h3>
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                        <li>Analyse des tendances d'utilisation (anonymisées)</li>
+                        <li>Analyse des tendances d&apos;utilisation (anonymisées)</li>
                         <li>Développement de nouvelles fonctionnalités</li>
                         <li>Optimisation des performances</li>
                         <li>Tests de qualité et débogage</li>
@@ -115,7 +115,7 @@ export default function Privacy() {
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                         <li>Notifications importantes concernant votre compte</li>
                         <li>Alertes de sécurité</li>
-                        <li>Mises à jour de l'application</li>
+                        <li>Mises à jour de l&apos;application</li>
                         <li>Support client</li>
                       </ul>
                     </div>
@@ -145,7 +145,7 @@ export default function Privacy() {
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                         <li><strong>Supabase</strong> : Hébergement sécurisé des données (conformité GDPR)</li>
                         <li><strong>Google Play Store / Apple App Store</strong> : Pour les achats intégrés</li>
-                        <li><strong>Fournisseurs de services</strong> : Uniquement pour le fonctionnement de l'application</li>
+                        <li><strong>Fournisseurs de services</strong> : Uniquement pour le fonctionnement de l&apos;application</li>
                       </ul>
                     </div>
 
@@ -169,7 +169,7 @@ export default function Privacy() {
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                         <li><strong>En transit</strong> : TLS 1.3 pour toutes les communications</li>
                         <li><strong>Au repos</strong> : AES-256 pour le stockage des données</li>
-                        <li><strong>Local</strong> : Chiffrement des données sensibles sur l'appareil</li>
+                        <li><strong>Local</strong> : Chiffrement des données sensibles sur l&apos;appareil</li>
                       </ul>
                     </div>
 
@@ -199,7 +199,7 @@ export default function Privacy() {
                   
                   <div className="space-y-4">
                     <div>
-                      <h3 className="text-xl font-medium mb-2">6.1 Droit d'accès</h3>
+                      <h3 className="text-xl font-medium mb-2">6.1 Droit d&apos;accès</h3>
                       <p className="text-muted-foreground">Vous pouvez demander une copie de toutes vos données personnelles.</p>
                     </div>
                     <div>
@@ -207,7 +207,7 @@ export default function Privacy() {
                       <p className="text-muted-foreground">Vous pouvez corriger ou mettre à jour vos informations.</p>
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium mb-2">6.3 Droit à l'effacement</h3>
+                      <h3 className="text-xl font-medium mb-2">6.3 Droit à l&apos;effacement</h3>
                       <p className="text-muted-foreground">Vous pouvez demander la suppression de votre compte et de vos données.</p>
                     </div>
                     <div>
@@ -215,7 +215,7 @@ export default function Privacy() {
                       <p className="text-muted-foreground">Vous pouvez exporter vos données dans un format lisible.</p>
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium mb-2">6.5 Droit d'opposition</h3>
+                      <h3 className="text-xl font-medium mb-2">6.5 Droit d&apos;opposition</h3>
                       <p className="text-muted-foreground">Vous pouvez vous opposer au traitement de vos données pour certaines finalités.</p>
                     </div>
                     <div>
@@ -268,9 +268,9 @@ export default function Privacy() {
                     <div>
                       <h3 className="text-xl font-medium mb-2">8.2 Cookies analytiques</h3>
                       <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                        <li>Mesure d'audience (anonymisée)</li>
-                        <li>Performance de l'application</li>
-                        <li>Amélioration de l'expérience utilisateur</li>
+                        <li>Mesure d&apos;audience (anonymisée)</li>
+                        <li>Performance de l&apos;application</li>
+                        <li>Amélioration de l&apos;expérience utilisateur</li>
                       </ul>
                     </div>
                   </div>
@@ -279,21 +279,21 @@ export default function Privacy() {
                 <section>
                   <h2 className="text-2xl font-semibold mb-4">9. TRANSFERT INTERNATIONAL</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Vos données sont principalement stockées dans l'Union Européenne. Tout transfert vers des pays tiers respecte les garanties appropriées du RGPD.
+                    Vos données sont principalement stockées dans l&apos;Union Européenne. Tout transfert vers des pays tiers respecte les garanties appropriées du RGPD.
                   </p>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-semibold mb-4">10. MINEURS</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Pocketly n'est pas destiné aux mineurs de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles de mineurs.
+                    Pocketly n&apos;est pas destiné aux mineurs de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles de mineurs.
                   </p>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-semibold mb-4">11. MODIFICATIONS DE CETTE POLITIQUE</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Nous pouvons modifier cette politique de confidentialité. Les modifications importantes seront notifiées via l'application ou par e-mail.
+                    Nous pouvons modifier cette politique de confidentialité. Les modifications importantes seront notifiées via l&apos;application ou par e-mail.
                   </p>
                 </section>
 
@@ -310,7 +310,7 @@ export default function Privacy() {
                     </div>
                     <div>
                       <h3 className="text-xl font-medium mb-2">12.2 Autorité de contrôle</h3>
-                      <p className="text-muted-foreground">Vous pouvez déposer une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés).</p>
+                      <p className="text-muted-foreground">Vous pouvez déposer une réclamation auprès de la CNIL (Commission Nationale de l&apos;Informatique et des Libertés).</p>
                     </div>
                     <div>
                       <h3 className="text-xl font-medium mb-2">12.3 Support client</h3>
@@ -336,7 +336,7 @@ export default function Privacy() {
                 </section>
 
                 <section>
-                  <h2 className="text-2xl font-semibold mb-4">14. GESTION DE VOS DONNÉES DANS L'APPLICATION</h2>
+                  <h2 className="text-2xl font-semibold mb-4">14. GESTION DE VOS DONNÉES DANS L&apos;APPLICATION</h2>
                   
                   <div className="space-y-4">
                     <div>
@@ -356,7 +356,7 @@ export default function Privacy() {
 
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8">
                   <p className="text-blue-800 font-medium text-center">
-                    <strong>Pocketly s'engage à protéger votre vie privée et à traiter vos données avec le plus grand respect et la plus grande sécurité.</strong>
+                    <strong>Pocketly s&apos;engage à protéger votre vie privée et à traiter vos données avec le plus grand respect et la plus grande sécurité.</strong>
                   </p>
                   <p className="text-blue-600 text-center mt-2 italic">
                     Cette politique de confidentialité est effective depuis le 15 janvier 2025.
